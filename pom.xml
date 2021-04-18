@@ -7,25 +7,29 @@
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>15</maven.compiler.source>
-        <maven.compiler.target>15</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+
+
+<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 <dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-java</artifactId>
-    <version>8.0.23</version>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.11.4</version>
+    <type>jar</type>
 </dependency>
 
-<!-- local jar file in the lib directory. Please run this command to install it:
-mvn install:install-file -Dfile=.\lib\rs2xml.jar
- -DgroupId=net.proteanit.sql -DartifactId=rs2xml -Dversion=12.1.0.2 -Dpackaging=jar -->
+<!-- https://mvnrepository.com/artifact/junit/junit -->
 <dependency>
-    <groupId>net.proteanit.sql</groupId>
-    <artifactId>rs2xml</artifactId>
-    <version>12.1.0.2</version>   
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.13.2</version>
+    <scope>test</scope>
 </dependency>
+
 
     </dependencies>
 </project>
